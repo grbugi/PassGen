@@ -12,7 +12,7 @@ Main feachure is algorithm that never miss required chater's type (excluding cas
 - You can easely edit random password and it will have been saved after edited password copying.
 - If you copy password it will copy that whole (even if you miss first or last charter when you select it).
 
-##Usage
+## Usage
 Enter number of characters.
 Select the required options for include or exlude the characters:
 
