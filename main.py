@@ -13,6 +13,7 @@ from random import choice
 from time import strftime
 from tkinter import *
 from tkinter import messagebox
+from tktooltip import ToolTip
 
 StartTime = strftime('%d %b %Y %H-%M-%S')
 version = '1.5'
@@ -246,7 +247,7 @@ def about(*args):
         '\n\t0..9\t- Numbers'
         '\n\t!@#$\t- Symbols'
         '\n\toO0lI1|\t- Similar characters'
-        '\n\t.,_:;\'\"`?\t- Dots like symbols and ?'
+        '\n\t.,_:;\'\"`?\t- Dots-like symbols and ?'
         '\n\t\/()[]{}<>|\t- Brackets'
         '\n\tExcel\t- Replace last character for letter (for slove Excel\'s issues)'
         '\n\nClick on "Generate" button or hit "Enter" or "Return" on your keyboard.'
@@ -255,23 +256,31 @@ def about(*args):
         '\nThe Password Generator keeps logs. You can open the log file by clicking on the appropriate button or with Ctrl+L.'
         ' You can find the log files and configuration file in "Password Generator" folder near executable file of the application')
 
-
 # GUI Programming
 EmptyLineLabel = Label(root, text="",font='Courier 12')
+
 EntryNumber = Spinbox(root, from_=1, to=128, justify=CENTER, relief=FLAT, width=4, textvariable=N, font=('Courier 11'))
 EntryNumberLabel = Label(root, text='Number of characters:', pady=5, padx=4, font=('Courier 11'))
 LettersLowBox = Checkbutton(root, text="a..z", variable=LettersLow, onvalue=True, offvalue=False, font=('Courier 11'))
+ToolTip(LettersLowBox, msg='Lowercase letters')
 LettersUpBox = Checkbutton(root, text="A..Z", variable=LettersUp, onvalue=True, offvalue=False, font=('Courier 11'))
+ToolTip(LettersUpBox, msg='Uppercase Letters')
 NumbersBox = Checkbutton(root, text="0..9", variable=Numbers, onvalue=True, offvalue=False, font=('Courier 11'))
+ToolTip(NumbersBox, msg='Numbers')
 SymbolsBox = Checkbutton(root, text="!@#$", variable=Symbols, onvalue=True, offvalue=False, font=('Courier 11'))
+ToolTip(SymbolsBox, msg='Symbols')
 ExclSameBox = Checkbutton(root, justify=LEFT, text="oO0lI|", variable=ExclSame, onvalue=False, offvalue=True,
                           font=('Courier 11'))
+ToolTip(ExclSameBox, msg='Similar characters')
 ExclDotsBox = Checkbutton(root, justify=LEFT, text=".,_:;'\"`?", variable=ExclDots, onvalue=False, offvalue=True,
                           font=('Courier 11'))
+ToolTip(ExclDotsBox, msg='Dots-like symbols and ?')
 ExclBrkBox = Checkbutton(root, justify=LEFT, text="\/()[]{}<>|", variable=ExclBrk, onvalue=False, offvalue=True,
                          font=('Courier 11'))
+ToolTip(ExclBrkBox, msg='Brackets')
 LastCharBox = Checkbutton(root, justify=LEFT, text="Excel", variable=LastCharSw, onvalue=True, offvalue=False,
                           font=('Times 11 italic'))
+ToolTip(LastCharBox, msg='Replace last character for letter (for slove Excel\'s issues)')
 PasswordResult = Entry(root, justify=CENTER, width=34, font=('System 12'), relief=FLAT, text=password.get(), textvariable=password)
 GenerateButton = Button(root, text='Generate', width=18, relief=GROOVE, command=generate, font=('bold'), height=2)
 CopyButton = Button(root, text='Copy', width=2, relief=GROOVE, command=copypass)
