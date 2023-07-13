@@ -5,12 +5,12 @@ This Password Generator creates semi-randomize combinations of charters.
 ## Featchers
 Main feachure is algorithm that never miss required chater's type (excluding case where number of charters less then number of required charter's types).
 
-🖥️ It is compleatly offline.
-📜 It creates log file every time when you open the program. So you will never been missed your random password.
-🧮 It counts nuber of chars from manual inputed password.
-💾 It will save your preferences in configuration file and load it next time.
-✏️ You can easely edit random password and it will have been saved after edited password copying.
-🖱️ If you copy password it will copy that whole (even if you miss first or last charter when you select it). 
+🖥️ It is compleatly offline.<br>
+📜 It creates log file every time when you open the program. So you will never been missed your random password.<br>
+🧮 It counts nuber of chars from manual inputed password.<br>
+💾 It will save your preferences in configuration file and load it next time.<br>
+✏️ You can easely edit random password and it will have been saved after edited password copying.<br>
+🖱️ If you copy password it will copy that whole (even if you miss first or last charter when you select it).
 
 ## Usage
 Enter number of characters.
