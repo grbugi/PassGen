@@ -1,7 +1,8 @@
 # Password Generator 🔑
 
 This Password Generator creates semi-randomize combinations of charters.
-
+<br>
+![Screenshot](/screenshot.png)
 ## Featchers
 Main feachure is algorithm that never miss required chater's type (excluding case where number of charters less then number of required charter's types).
 
