@@ -4,11 +4,11 @@ This Password Generator creates semi-randomize combinations of charters.
 <br>
 ![Screenshot](/screenshot.png)<br>
 ⭐ Never miss required chater's type (excluding case where number of charters less then number of required charter's types).<br>
-🖥️ It is compleatly offline.<br>
+🖥️ Compleatly offline.<br>
 📜 It creates log file every time when you open the program. So you will never been missed your random password.<br>
+✏️ You can easely edit random password and it will have been saved to log after copying.<br>
 🧮 It counts the number of chars from manual inputed password.<br>
 💾 It saves your preferences in configuration file and load it next run.<br>
-✏️ You can easely edit random password and it will have been saved after edited password copying.<br>
 🖱️ If you copy password it will copy that whole (even if you miss first or last charter when you select it)
 ⌨️ It supports hotkeys
 
